@@ -381,12 +381,28 @@ nav ul {
   z-index: 99999;
   padding: 0 50px;
 }
+.svet_ton_a:hover .caption {
+	color: #ff3448;
+}
+.svet_ton_a:hover .paragraph {
+	color: #fff;
+}
+.temn_ton_a:hover .caption {
+	color: #ff3448;
+}
+.temn_ton_a:hover .paragraph {
+	color: #fff;
+}
 .section_image {
   width: 100%;
   position: relative;
 }
 .section_image_1 {
   background: url(../images/fara.png) no-repeat center;
+  background-position: right -10px bottom -50px;
+}
+.svet_ton_a:hover .section_image_1 {
+	background: url(../images/fara_svet.png) no-repeat center;
   background-position: right -10px bottom -50px;
 }
 .section_image_2 {
