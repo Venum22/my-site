@@ -15,7 +15,7 @@ a {
 svg {
   width: 50px;
 }
-h1, h2, h3, h4, h5, h6, span, {
+h1, h2, h3, h4, h5, h6, span, p {
   margin: 0;
   padding: 0;
 }
@@ -53,7 +53,6 @@ input {
 }
 .header_navbar {
   width: 100%;
-  min-height: 142px;
 }
 .header_navbar:nth-child(1) {
   position: absolute;
@@ -125,7 +124,6 @@ input::-webkit-search-cancel-button {
   display: none; 
 }
 input[type=search] {
-  /*background: url(../svg/search_ico.svg) no-repeat 2px center;*/
   background-image: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' xmlns:xlink='http://www.w3.org/1999/xlink' enable-background='new 0 0 512 512'%3E%3Cg%3E%3Cpath d='m495,466.1l-110.1-110.1c31.1-37.7 48-84.6 48-134 0-56.4-21.9-109.3-61.8-149.2-39.8-39.9-92.8-61.8-149.1-61.8-56.3,0-109.3,21.9-149.2,61.8-39.9,39.8-61.8,92.8-61.8,149.2 0,56.3 21.9,109.3 61.8,149.2 39.8,39.8 92.8,61.8 149.2,61.8 49.5,0 96.4-16.9 134-48l110.1,110c8,8 20.9,8 28.9,0 8-8 8-20.9 0-28.9zm-393.3-123.9c-32.2-32.1-49.9-74.8-49.9-120.2 0-45.4 17.7-88.2 49.8-120.3 32.1-32.1 74.8-49.8 120.3-49.8 45.4,0 88.2,17.7 120.3,49.8 32.1,32.1 49.8,74.8 49.8,120.3 0,45.4-17.7,88.2-49.8,120.3-32.1,32.1-74.9,49.8-120.3,49.8-45.4,0-88.1-17.7-120.2-49.9z' fill='%23fff'/%3E%3C/g%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: 2px center;
@@ -314,7 +312,6 @@ nav ul {
   list-style-type: none;
   position: relative;
   width: 100%;
-  min-height: 54px; 
 }
 .menu:nth-child(3) {
   background-color: #030303;
@@ -338,6 +335,7 @@ nav ul {
 .menu_list_item_a:hover {
   color: #ff3448;
 }
+
 /* секция после шапки */
 .block {
   display: flex;
@@ -361,42 +359,47 @@ nav ul {
   color: #fff;
   font-size: 35px;
   text-transform: uppercase;
+  width: 100%;
 }
 .paragraph {
   font-family: "Lato-Regular", sans-serif;
   color: #979696;
   font-size: 20px;
-}
-.article {
-  display: flex;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-  width: 50%;
-}
-.section_image {
-  width: 50%;
-  background: url(../images/fara.png) no-repeat center;
-  margin-left: 60px;
-}
-.section_image_1 {
-  background: url(../images/disk_tomoz.png) no-repeat center;
-  width: 50%;
-  margin-top: 75px;
-  margin-right: 28px;
-}
-.section_image_2 {
-  background: url(../images/avto_disk.png) no-repeat center;
-  width: 50%;
-  margin-top: 50px;
-  margin-right: 70px;
-}
-.section_image_3 {
-  background: url(../images/avto_creslo.png) no-repeat center;
-  width: 50%;
-  margin-top: 50px;
-  margin-right: 80px;
+  letter-spacing: 2px;
 }
 .temn_ton_a, .svet_ton_a {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
 }
+.article {
+  content: "";
+  display: block;
+  width: 50%;
+  position: absolute;
+  margin-top: 163px;
+  z-index: 99999;
+  padding: 0 50px;
+}
+.section_image {
+  width: 100%;
+  position: relative;
+}
+.section_image_1 {
+  background: url(../images/fara.png) no-repeat center;
+  background-position: right -10px bottom -50px;
+}
+.section_image_2 {
+  background: url(../images/disk_tomoz.png) no-repeat center;
+  background-position: right 20px bottom -33px;
+}
+.section_image_3 {
+  background: url(../images/avto_disk.png) no-repeat right 30px bottom 13px,
+  			  url(../images/avto_disk1.png) no-repeat right 155px bottom 33px;
+}
+.section_image_4 {
+  background: url(../images/avto_creslo.png) no-repeat center;
+  background-position: right 30px bottom 10px;
+}
+
+
