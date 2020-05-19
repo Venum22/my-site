@@ -1665,12 +1665,18 @@ a svg {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .search_header {
+    margin-left: 0;
+  }
+  .search_header:before {
+    display: none;
+  }
   .header_top {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
     position: relative;
-    top: 39px;
+    top: 37px;
     bottom: 0;
     left: 0;
   }
@@ -1779,7 +1785,7 @@ a svg {
     top: -29px;
   }
 .menu {
-  height: 55px;
+  height: 40px;
   background-color: #333;
   position: relative;
 }
@@ -1851,7 +1857,7 @@ a svg {
   margin-right: 0;
 }
 .menu_list {
-  margin: 10px 0;
+  margin: 24px 0;
 }
 .block {
   min-height: 330px;
