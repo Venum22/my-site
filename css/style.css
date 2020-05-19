@@ -1754,6 +1754,7 @@ a svg {
   }
   .header_contact_item, .header_contact_ico {
     width: 17px;
+    height: 17px;
   }
   .header_contact_ico {
     margin: 0;
