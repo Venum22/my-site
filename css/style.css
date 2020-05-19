@@ -1656,7 +1656,7 @@ a svg {
     min-height: 330px;
   }
   .header_navbar:nth-child(1) {
-    position: relative;
+    position: fixed;
     max-height: 90px;
   }
   .header_top, .header_bottom {
